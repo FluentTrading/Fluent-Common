@@ -41,7 +41,7 @@ public enum FluentBackoff{
     
 
     public final static void backoff( long time, TimeUnit unit ){
-        if( IS_WINDOWS ){
+        if( isWindows( ) ){
             long timeMillis = (MILLISECONDS == unit) ? time : MILLISECONDS.convert(time, unit);
             yieldMillis( timeMillis );
             

@@ -13,13 +13,10 @@ import sun.management.*;
 
 public final class IOUtil{
 
-    public final static boolean IS_WINDOWS      = isWindows( );
-    public final static boolean IS_LINUX        = isLinux( );
     public final static String  HOSTNAME        = getHostName( );
     @SuppressWarnings( "restriction" )
     private final static RuntimeMXBean MX_BEAN  = ManagementFactoryHelper.getRuntimeMXBean();
-    private final static String OS_NAME         = System.getProperty( "os.name" ).toLowerCase( );
-    
+        
     private IOUtil( ){}
 
    
@@ -36,12 +33,14 @@ public final class IOUtil{
     }
         
 
-    protected final static boolean isWindows( ){
+    public final static boolean isWindows( ){
+        String OS_NAME         = System.getProperty( "os.name" ).toLowerCase( );
         return OS_NAME.indexOf( "win" ) >= ZERO;
     }
 
 
-    protected final static boolean isLinux( ) {
+    public final static boolean isLinux( ) {
+        String OS_NAME         = System.getProperty( "os.name" ).toLowerCase( );
         return OS_NAME.indexOf( "nix" ) >= ZERO || OS_NAME.indexOf( "nux" ) >= ZERO || OS_NAME.indexOf( "aix" ) > ZERO;
     }
     
