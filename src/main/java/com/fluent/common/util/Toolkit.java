@@ -7,7 +7,7 @@ import static com.fluent.common.util.Constants.*;
 
 public final class Toolkit{
 
-    protected Toolkit( ){}
+    private Toolkit( ){}
 
     
     public final static String errorIfEmpty( String value, String message ){

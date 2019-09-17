@@ -11,13 +11,13 @@ import static com.fluent.common.util.Constants.*;
 import sun.management.*;
 
 
-public final class IOUtil{
+public final class IOUtils{
 
     public final static String  HOSTNAME        = getHostName( );
     @SuppressWarnings( "restriction" )
     private final static RuntimeMXBean MX_BEAN  = ManagementFactoryHelper.getRuntimeMXBean();
         
-    private IOUtil( ){}
+    private IOUtils( ){}
 
    
     public final static List<String> loadFile( String filename ) throws Exception{

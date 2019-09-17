@@ -1,4 +1,4 @@
-package com.fluent.common.collection;
+package com.fluent.common.collections;
 
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;

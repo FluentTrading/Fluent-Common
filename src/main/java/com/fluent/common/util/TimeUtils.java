@@ -5,9 +5,9 @@ import java.util.*;
 import static com.fluent.common.util.Constants.*;
 
 
-public final class TimeUtil{
+public final class TimeUtils{
 
-    private TimeUtil( ){}
+    private TimeUtils( ){}
 
     
     public final static long currentNanos( ){
